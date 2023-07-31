@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,600;1,900&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/68cfb5012e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!---------------navbar--------------->
+    <header>
+      <nav>
+        <div class="left">Port<span>folio</span></div>
+        <div class="right">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact Info</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!----------------- intro-------------------->
+      <div class="firstSection">
+        <div class="leftSection">
+          Hi, My name is
+          <br><span class="lol"><b>Numaan Ahmed</b></span></br>
+          <div>and I am a passionate<br>
+           <span id="element"></span>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="dv.jpg" id="hero-img" alt="" srcset="" />
+        </div>
+      </div><hr>
+
+      <!-----------------------about----------------------->
+      <div id="secondSection">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="num2.png" >
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-title">About Me</h1>
+              <p id="con">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus praesentium reiciendis, saepe impedit quis facilis assumenda optio alias esse beatae, natus quo accusantium eum soluta deserunt iusto corrupti inventore suscipit eos quod. Laudantium adipisci distinctio, consectetur eveniet perspiciatis inventore sit.</p>
+            
+              <div class="tab-titles">
+                <p class="tab-links active-links" onclick="opentab('education')">Education</p>
+                <p class="tab-links"onclick="opentab('skills')">Skills</p>
+              </div>
+              <div class="tab-contents active-tab" id="education">
+                <ul>
+                  <li><span>Junior Schooling:<br></span>NITK English Medium  School</li>
+                  <li><span>High Schooling:<br></span>KPS School Gujarat</li>
+                  <li><span>Diploma:<br></span>Jain Polytechnic Belgaum</li>
+                  <li><span>Engineering:<br></span>Gogte Institute of Technolgy</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="skills">
+                <ul>
+                  <li><span>Web Dev:<br></span>Web App Development</li>
+                  <li><span>Android Dev:<br></span>Android Application Development</li>
+                  <li><span>ML Engineer:<br></span>Basics in Machine Learning</li>
+                  <li><span>Video Editing:<br></span>Video Editing Using Adobe Premiere Rush</li>
+                </ul>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <hr>
+      <!-- ------------------services------------------------- -->
+      <div id="services">
+        <div class="container">
+          <h1 class="sub-title">My Services</h1>
+          <div class="services-list">
+             <div>
+              <i class="fa-solid fa-code fa-bounce fa-xl"></i>
+              <h2>Web and App Designing</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sapiente, maxime veritatis doloremque facilis harum earum ex voluptatem nostrum nesciunt?</p>
+              <a href="#">Learn more</a>
+            </div>
+             <div>
+              <i class="fa-solid fa-crop fa-bounce fa-xl"></i>
+              <h2>Web Development</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sapiente, maxime veritatis doloremque facilis harum earum ex voluptatem nostrum nesciunt?</p>
+              <a href="#">Learn more</a>
+            </div>
+             <div>
+              <i class="fa-brands fa-android fa-bounce fa-xl"></i>
+              <h2>Android Development</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sapiente, maxime veritatis doloremque facilis harum earum ex voluptatem nostrum nesciunt?</p>
+              <a href="#">Learn more</a> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+    <!-- -----------------------portfolio-------------------------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="work-img-1.png">
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>An app that connects you to talented people around the world.
+                Download it from PlayStore.</p>
+                <a href="https://www.linkedin.com"target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="work-img-2.png">
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>Listen to songs on music player app, or stream offline on premium.
+                Download it from PlayStore.</p>
+                <a href="https://open.spotify.com/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="work-img-3.png">
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>Shop fashionable clothing brands and beauty products from home.
+                Download it from PlayStore.</p>
+                <a href="https://www.myntra.com/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More..</a>
+      </div>
+    </div>
+    </main>
+    <hr>
+    <!-- ----------------------footer----------------------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p><i class="fa-sharp fa-solid fa-paper-plane"></i>numaanahmed3110@gmail.com</p>
+              <p><i class="fa-solid fa-phone-flip"></i>9558616923</p>
+              <div class="social-icons">
+                <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com"><i class="fa-brands fa-twitter "></i></a>
+                <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://linkedin.com"><i class="fa-brands fa-linkedin "></i></a>
+              </div>
+              <a href="index.pdf" download class="btn btn2">DOWNLOAD CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="emailid" type="email" placeholder="Your Email" required>
+              <textarea name="Message" id=" Your Message" placeholder="Comments" rows="6"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright" !important>
+      <p>Copyright @ Numaan. Made with <i class="fas fa-heart"></i> Easy Tutorials</p>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+    var typed = new Typed('#element', {
+      strings: ['<i>Web Designer.......</i>', 'Web Developer.....','Android Developer....','ML Engineer...','Video Editor..'],
+      typeSpeed: 50,
+    });
+
+         function opentab(tabname){
+              var tablinks=document.getElementsByClassName("tab-links");
+            var tabcontents=document.getElementsByClassName("tab-contents");
+
+            for(tablink of tablinks){
+              tablink.classList.remove("active-links");
+            }
+            for(tabcontent of tabcontents){
+              tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab");
+         }    
+
+    </script>
+  </body>
+</html>
